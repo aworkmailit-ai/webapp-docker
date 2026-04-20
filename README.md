@@ -7,7 +7,7 @@
 
 ## 📊 Скриншоты
 
-![webapp-docker](./screenshots/screen.png)
+![Работающее Todo-приложение](screenshots/app-screenshot.png)
 
 ## Технологии
 - Python / Flask
