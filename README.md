@@ -3,6 +3,12 @@
 ## Описание
 Простое Todo-приложение (список задач) с использованием Flask, PostgreSQL и Nginx.
 
+**Что вы увидите на скриншоте ниже — сможете запустить у себя.**
+
+## 📊 Скриншоты
+
+![webapp-docker](./screenshots/screen.png)
+
 ## Технологии
 - Python / Flask
 - PostgreSQL
