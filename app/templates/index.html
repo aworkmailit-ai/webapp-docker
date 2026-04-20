@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo App</title>
+    <style>
+        body { font-family: Arial; margin: 40px; }
+        .task { margin: 10px 0; padding: 10px; background: #f0f0f0; }
+        .delete { color: red; margin-left: 10px; text-decoration: none; }
+        input[type="text"] { padding: 8px; width: 300px; }
+        button { padding: 8px 16px; background: green; color: white; border: none; }
+    </style>
+</head>
+<body>
+    <h1>Todo List</h1>
+    
+    <form method="POST" action="/add">
+        <input type="text" name="task" placeholder="Новая задача..." required>
+        <button type="submit">Добавить</button>
+    </form>
+    
+    <h2>Задачи:</h2>
+    {% for todo in todos %}
+        <div class="task">
+            {{ todo[1] }}
+            <a href="/delete/{{ todo[0] }}" class="delete">Удалить</a>
+        </div>
+    {% endfor %}
+</body>
+</html>
